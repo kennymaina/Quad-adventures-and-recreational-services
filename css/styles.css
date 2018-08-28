@@ -12,6 +12,9 @@
     padding: 14px 16px;
     text-decoration: none;
 }
+h2{
+  font-size: 12px;
+}
 body {
   background-image: url(../images/the.jpg);
 
@@ -66,4 +69,47 @@ body {
 p {
   font-size: 16px;
   font-family: Helvetica;
+}
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+.column {
+    float: left;
+    width: 25%;
+    padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+    .column  {
+        width: 50%;
+    }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+    .column  {
+        width: 100%;
+    }
 }
