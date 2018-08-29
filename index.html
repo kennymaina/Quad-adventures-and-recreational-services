@@ -2,19 +2,62 @@
 <html>
 <head>
   <h1>QUAD ADVENTURES</h1>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <div class="navbar">
   <a class="active" href="#"><i class="fa fa-fw fa-home"></i> Home</a>
-  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
   <a href="#"><i class="fa fa-fw fa-envelope"></i> Contact</a>
-  <a href="#"><i class="fa fa-fw fa-user"></i> Login</a>
-</div>
+  <a href="#"><i class="fa fa-fw fa-search"></i> Search</a>
+  <form class="search" action="index.html" method="post">
+    <input type="text" id="searchBar" placeholder="" value="Search..." maxlength="25" autocomplete="on" onMouseDown="" onBlur="">
+    <input type="submit" id="searchbtn" value="Go!">
+  </form>
+
+  <h2>Login form</h2>
+
+
+  <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+  <div id="id01" class="modal">
+
+    <form class="modal-content animate" action="/action_page.php">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="images/av.jpg" alt="Avatar">
+      </div>
+
+      <div class="container">
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+
+        <label for="psw"><b>Password</b></label>
+        <input type="password" placeholder="Enter Password" name="psw" required>
+
+        <button type="submit">Login</button>
+        <label>
+          <input type="checkbox" checked="checked" name="remember"> Remember me
+        </label>
+      </div>
+
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <span class="psw">Forgot <a href="#">password?</a></span>
+      </div>
+    </form>
+  </div>
+
+
+ </div>
 
   <title></title>
   <link rel="stylesheet" href="css/styles.css" type="text/css">
   <link rel="stylesheet" href="css/bootstrap.css" type="text/css">
-  <source src="js/scripts.js" type="scripts/js">
-  </head>
+  <source src="js/scripts.js" type="text/javaScript">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   </head>
   <body>
+
   <h2>HIKING ACTIVITIES</h2>
     <ol>
       <h3>BUNGEE JUMPING</h3>
@@ -72,22 +115,57 @@ This team building activity challenges participants to be creative in solving a 
     <h2><li><a href="http://bountifulsafaris.com/">Bountifulsafaris</li></h2>
     <p><img src="images/bn.jpg" alt="bountifulsafaris" style="width:120px;height:180px;">
     <link rel="stylesheet" href="https://www.facebook.com/Bountifulsafari/"></p>
+    <div class="menu-container">
+        <ul class="nav navbar-nav navbar-nav-right">
+            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="http://www.bonfireadventures.com/bonfire-contact/">Contact</a></li>
+            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://www.instagram.com/bonfireadventures/?hl=en">Instagram</a></li>
+            <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://www.youtube.com/user/bonfireadventures">Youtube</a></li>
+            <li class="js_nav_item nav_item"><a class="nav-item-child nav-item-hover" href="https://www.facebook.com/bonfireadventures/">facebook</a></li>
+
+
+
+
+        </ul>
+    </div>
   </div>
     <div class="column">
     <h2><li><a href="http://kikwetuculturaladventures.com/">Kikwetuculturaladventures</li></h2>
       <img src="images/2k.jpeg" alt="Kikwetuculturaladventures" style="width:120px;height:180px;" >
+      <div class="menu-container">
+          <ul class="nav navbar-nav navbar-nav-right">
+
+              <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://www.instagram.com/adventure_culture/?hl=en">Instagram</a></li>
+              <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://www.youtube.com/channel/UC-cBJIC67LbD9b2ELMfsLuQ">Youtube</a></li>
+              <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://www.facebook.com/kikwetuculturaladventures/">facebook</a></li>
+
     </div>
     <div class="column">
 
       <h2><li><a href="http://www.wildebeestsafaris.com/">Wildebeestsafaris</li></h2>
         <img src="images/wb.png" alt="Wildebeestsafaris" style="width:120px;height:180px;" >
+        <div class="menu-container">
+            <ul class="nav navbar-nav navbar-nav-right">
+
+                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://www.instagram.com/explore/locations/1667828596876377/wildebeest-tours-safaris/">Instagram</a></li>
+                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://www.youtube.com/watch?v=vYIlx4wzG20">Youtube</a></li>
+                <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://www.facebook.com/WildebeestSafaris/">facebook</a></li>
+
+      </div>
         </div>
             <div class="column">
           <h2><li><a href="http://www.jockytours.com/">jockytours</li></h2>
             <img src="images/Jt.jpg" alt="" style="width:120px;height:180px;" >
               </div>
-          </ul>
+              <div class="menu-container">
+                  <ul class="nav navbar-nav navbar-nav-right">
+
+                      <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="ht">Instagram</a></li>
+                      <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://www.youtube./watch?v=Wkl9LQTTcom-Fc">Youtube</a></li>
+                      <li class="js_nav-item nav-item"><a class="nav-item-child nav-item-hover" href="https://www.facebook.com/Jocky-Tours-and-Safaris-352797211441378/">facebook</a></li>
+
+            </div>
   </div>
+
 
 
 
