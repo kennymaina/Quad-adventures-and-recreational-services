@@ -89,8 +89,14 @@ p {
 }
 .column {
   float: left;
-  width: 25%;
+  width: 33.333%;
   padding: 10px;
+  background-color: white;
+  background: color;
+  color: black;
+  border-radius: 10px;
+  border: 10px;
+  shape-margin: 5px;
 }
 
 /* Clear floats after the columns */
@@ -223,4 +229,9 @@ span.psw {
    padding: 10px
    outline: none;
    width: 250px;
+ }
+ .column {
+   float: left;
+   width: 25%;
+   padding: 10px;
  }
